@@ -25,7 +25,6 @@ public class SentimentDetector implements Runnable {
         String response = "";
 
         try {
-            System.out.println("New Request");
             URL url = new URL("https://sentim-api.herokuapp.com/api/v1/");
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
             http.setRequestMethod("POST");
